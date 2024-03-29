@@ -1,0 +1,17 @@
+Extending Double Q-learning to DQN is Double-DQN
+ 
+ Dualing DQN, when there is no big difference in action values,
+low level and high level control?
+
+Advantage function: A(s,a) = V(s) - Q(s,a)
+Q(s,a) = V(s) - A(s,a)
+
+learn the v function and A, instead of the Q function
+Use that Q function for updation.
+- pick actions according to the Q, then mesaure the performance
+- backprop and learn V and A.
+
+
+Implementation_details
+- should we use another fc layer after common features?[done, it should be i think]
+- Implement the DQN tutorial agent code.
