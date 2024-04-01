@@ -15,3 +15,11 @@ Use that Q function for updation.
 Implementation_details
 - should we use another fc layer after common features?[done, it should be i think]
 - Implement the DQN tutorial agent code.
+- so that means i do not need the traget network right?
+    - we need it or else how do we even compute it.
+- and graidient clipping a hueristic to prevent the problem of exploding gradients
+    - value clipping: if graident is greater than a value then replace it with this value
+    - norm clipping: scale the whole gradient for a norm value if norm exceeds a limit this way the directio
+        of the graident vector is preserved.
+- verify how the gradients work when you have the architecture you defined, just 
+    read the code from top and understand all the aspects of it.
